@@ -7,8 +7,6 @@
     font-family:'Courier New', Courier, monospace;
   }
   html,body{
-    width: 100%;
-    height: 100%;
     background-image: url('background.jpg');
     display: grid;
     height: 100%;
@@ -26,7 +24,7 @@
   }
   .wrapper{
     
-    height: 600px;
+    height: 700px;
     overflow: hidden;
     max-width: 390px;
     background: rgb(255, 254, 254);

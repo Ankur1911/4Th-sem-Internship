@@ -9,7 +9,6 @@
    </head>
    <body>
       <form method ="post" action="login.php">
-         
       </form>
       <div class="wrapper">
          <div class="title-text">
@@ -20,6 +19,8 @@
                Signup page
             </div>
          </div>
+         <img src="Avatar-Transparent-Images.png" class="dp" style="height: 50px; margin-left: 140px; margin-top: 30px;">
+
          <div class="form-container">
             <div class="slide-controls">
                <input type="radio" name="slide" id="login" checked>
@@ -27,8 +28,10 @@
                <label for="login" class="slide login">Login</label>
                <label for="signup" class="slide signup">Signup</label>
                <div class="slider-tab"></div>
-            </div>
+            </div>                         
+  
             <div class="form-inner">
+               
                <form action="#" class="login">
                   <div class="field">
                      <input type="text" placeholder="Email Address" required>
@@ -39,7 +42,11 @@
                   <div class="pass-link">
                      <a href="#">Forgot password?</a>
                   </div>
-                  <div class="field btn">
+                  <a class="btn btn-outline-light" href="/users/googleauth" role="button" style="text-transform:none">
+                     <img width="20px" style="margin-bottom:3px; margin-right:5px; margin-top: 20px;" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                     Signup with Google
+                   </a>
+                   <div class="field btn">
                      <div class="btn-layer"></div>
                      <input type="submit" value="Login">
                   </div>
@@ -58,7 +65,7 @@
                      <input type="text" placeholder="Email Address" required>
                   </div>
                   <div class="field">
-                     <input type="password" placeholder="Password" required>
+                     <input type="password" placeholder="Password" id="myInput" required>
                   </div>
                   <div class="field">
                      <input type="password" placeholder="Confirm password" required>
@@ -93,6 +100,9 @@
            signupBtn.click();
            return false;
          });
+         
+    
+    
       </script>
    </body>
 </html>
