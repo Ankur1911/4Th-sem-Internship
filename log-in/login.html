@@ -67,6 +67,7 @@
                   <div class="field">
                      <input type="password" placeholder="Password" id="myInput" required>
                   </div>
+                  <input type="checkbox" onclick="myFunction()">Show Password
                   <div class="field">
                      <input type="password" placeholder="Confirm password" required>
                   </div>
@@ -102,7 +103,14 @@
          });
          
     
-    
+         function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
       </script>
    </body>
 </html>
